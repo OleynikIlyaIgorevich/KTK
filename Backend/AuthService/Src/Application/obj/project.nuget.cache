@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Gj9PSCRCmqo=",
+  "dgSpecHash": "UUGhiSyG7eQ=",
   "success": true,
   "projectFilePath": "C:\\Projects\\KTK\\Backend\\AuthService\\Src\\Application\\Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ilyao\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\ilyao\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\ilyao\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0\\microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",
     "C:\\Users\\ilyao\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.0\\microsoft.entityframeworkcore.analyzers.9.0.0.nupkg.sha512",

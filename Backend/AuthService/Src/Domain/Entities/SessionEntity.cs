@@ -1,6 +1,6 @@
 ﻿namespace Domain.Entities;
 
-public class SessionEntity : BaseEntity, IHaveKey
+public class SessionEntity : BaseEntity<int>
 {
     public int Id { get; }
     public int UserId { get; set; }
@@ -8,7 +8,7 @@ public class SessionEntity : BaseEntity, IHaveKey
     public string Token { get; set; }
     public DateTime ExpiresAt { get; set; }
 
-    public SessionEntity()
+    internal SessionEntity()
     {
     }
 

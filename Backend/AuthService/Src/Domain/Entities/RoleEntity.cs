@@ -1,15 +1,13 @@
 ﻿namespace Domain.Entities;
 
-public class RoleEntity : BaseEntity, IHaveKey
+public class RoleEntity : BaseEntity<int>
 {
-    public int Id { get; }
-
     public string Title { get; set; }
     public string? Description { get; set; }
 
     public List<PermissionEntity> Permissions { get; set; } = [];
 
-    public RoleEntity()
+    internal RoleEntity()
     {
     }
     

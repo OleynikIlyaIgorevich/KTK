@@ -3,12 +3,14 @@ var configuration = builder.Configuration;
 
 
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddTransient<DbContext, AuthDbContext>();
 builder.Services.AddDatabase(configuration);
+builder.Services.AddTransient<DbContext, AuthDbContext>();
+builder.Services.AddRepositories();
+builder.Services.AddUnitOfWork();
+builder.Services.AddServices();
 
 var app = builder.Build();
 

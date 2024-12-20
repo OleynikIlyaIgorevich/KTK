@@ -1,10 +1,14 @@
 ﻿namespace Api.Controllers;
 
-public class TokenController : BaseController
+public class TokenController
+    : BaseController
 {
+
     [HttpPost]
-    public async Task<IActionResult> SignInAsync()
+    public async Task<IActionResult> SignInAsync(
+        TokenRequest request, CancellationToken cancellationToken = default)
     {
+        
         return Ok();
     }
 
