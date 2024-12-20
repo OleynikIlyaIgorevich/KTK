@@ -1,0 +1,15 @@
+C:\Projects\KTK\Backend\AuthService\Src\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Projects\KTK\Backend\AuthService\Src\Domain\bin\Debug\net8.0\Domain.dll
+C:\Projects\KTK\Backend\AuthService\Src\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.dll
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Projects\KTK\Backend\AuthService\Src\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Projects\KTK\Backend\AuthService\Src\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
