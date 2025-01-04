@@ -1,0 +1,16 @@
+﻿global using UsersService.Api.Controllers.Base;
+global using Microsoft.AspNetCore.Mvc;
+global using Domain.Extensions;
+global using Domain;
+global using Microsoft.EntityFrameworkCore;
+global using Application.Requests;
+global using Domain.Entities;
+global using System.Text.Json.Serialization;
+global using Infra.Extensions;
+global using Application.IServices;
+global using System.Net;
+global using System.Text;
+global using KTK.Shared.Constants.Permission;
+global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.IdentityModel.Tokens;
+global using Shared.Constants.Permission;

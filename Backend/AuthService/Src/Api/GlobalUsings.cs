@@ -1,9 +1,0 @@
-﻿global using Api.Controllers.Base;
-global using Microsoft.AspNetCore.Mvc;
-global using Domain.Extensions;
-global using Domain;
-global using Microsoft.EntityFrameworkCore;
-global using Application.Requests;
-global using Domain.Entities;
-global using System.Text.Json.Serialization;
-global using Infra.Extensions;
