@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "UsersService.Api.Controllers.TokenController",
+    "Method": "SignInAsync",
+    "RelativePath": "api/Token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UsersService.Application.Requests.TokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Api.Controllers.TokenController",
+    "Method": "RefreshAsync",
+    "RelativePath": "api/Token/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UsersService.Application.Requests.RefreshTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsersService.Api.Controllers.TokenController",
+    "Method": "SignOutAsync",
+    "RelativePath": "api/Token/revoke",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UsersService.Application.Requests.RevokeTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,6 +1,1 @@
-﻿namespace Shared;
-
-public class GlobalUsings
-{
-
-}
+﻿global using System.Reflection;
