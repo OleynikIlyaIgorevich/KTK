@@ -5,7 +5,7 @@ namespace UsersService.Application.IServices;
 
 public interface ITokenService
 {
-    Task<IResult<TokenResponse>> CreateAsync(TokenRequest request, CancellationToken cancellationToken);
-    Task<IResult<TokenResponse>> RefreshAsync(RefreshTokenRequest request, CancellationToken cancellationToken);
-    Task<IResult<TokenResponse>> RevokeAsync(RevokeTokenRequest request, CancellationToken cancellationToken);
+    Task<IOperationResult<TokenResponse>> CreateAsync(TokenRequest request, CancellationToken cancellationToken);
+    Task<IOperationResult<TokenResponse>> RefreshAsync(RefreshTokenRequest request, CancellationToken cancellationToken);
+    Task<IOperationResult<TokenResponse>> RevokeAsync(RevokeTokenRequest request, CancellationToken cancellationToken);
 }

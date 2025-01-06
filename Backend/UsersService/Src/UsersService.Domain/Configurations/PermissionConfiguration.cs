@@ -42,5 +42,7 @@ public class PermissionConfiguration
                     .HasOne(rp => rp.Permission)
                     .WithMany(p => p.RolePermissions)
                     .HasForeignKey(rp => rp.PermissionId));
+        
+        builder.SeedData();
     }
 }

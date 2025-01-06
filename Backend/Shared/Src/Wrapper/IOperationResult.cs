@@ -7,7 +7,7 @@ public interface IOperationResult
     bool Succeeded { get; set; }
 }
 
-public interface IResult<out T> : IOperationResult
+public interface IOperationResult<out T> : IOperationResult
 {
     T Data { get; }
 }

@@ -1,7 +1,17 @@
 ﻿namespace Shared.Constants.Permission;
 
-public class Permissions
+public static class Permissions
 {
+    public static class Users
+    {
+        public static string Get = "Permission.Users.Get";
+        public static string Create = "Permission.Users.Create";
+        public static string Update = "Permission.Users.Update";
+        public static string Delete = "Permission.Users.Delete";
+        
+        public static string Export = "Permission.Users.Export";
+        public static string Import = "Permission.Users.Import";
+    }
     
     
     public static List<string> GetRegisteredPermissions()

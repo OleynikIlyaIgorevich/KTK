@@ -39,7 +39,7 @@ public class OperationResult : IOperationResult
         
 }
 
-public class OperationResult<T> : OperationResult, IResult<T> 
+public class OperationResult<T> : OperationResult, IOperationResult<T> 
 {
     public OperationResult() { }
 

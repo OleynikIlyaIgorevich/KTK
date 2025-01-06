@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Projects\\KTK\\Backend\\UsersService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{124C80E9-D528-453C-BB27-1A80C7E5AA29}|Src\\UsersService.Domain\\UsersService.Domain.csproj|c:\\projects\\ktk\\backend\\usersservice\\src\\usersservice.domain\\dataseeders\\usersdataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C80E9-D528-453C-BB27-1A80C7E5AA29}|Src\\UsersService.Domain\\UsersService.Domain.csproj|solutionrelative:src\\usersservice.domain\\dataseeders\\usersdataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2399BA09-BC6B-4C26-8BAF-7FDFB6A233B4}|Src\\UsersService.Infra\\UsersService.Infra.csproj|c:\\projects\\ktk\\backend\\usersservice\\src\\usersservice.infra\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2399BA09-BC6B-4C26-8BAF-7FDFB6A233B4}|Src\\UsersService.Infra\\UsersService.Infra.csproj|solutionrelative:src\\usersservice.infra\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2399BA09-BC6B-4C26-8BAF-7FDFB6A233B4}|Src\\UsersService.Infra\\UsersService.Infra.csproj|c:\\projects\\ktk\\backend\\usersservice\\src\\usersservice.infra\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2399BA09-BC6B-4C26-8BAF-7FDFB6A233B4}|Src\\UsersService.Infra\\UsersService.Infra.csproj|solutionrelative:src\\usersservice.infra\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124C80E9-D528-453C-BB27-1A80C7E5AA29}|Src\\UsersService.Domain\\UsersService.Domain.csproj|c:\\projects\\ktk\\backend\\usersservice\\src\\usersservice.domain\\valueobjects\\username.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C80E9-D528-453C-BB27-1A80C7E5AA29}|Src\\UsersService.Domain\\UsersService.Domain.csproj|solutionrelative:src\\usersservice.domain\\valueobjects\\username.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UsersDataSeeder.cs",
+              "DocumentMoniker": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Domain\\DataSeeders\\UsersDataSeeder.cs",
+              "RelativeDocumentMoniker": "Src\\UsersService.Domain\\DataSeeders\\UsersDataSeeder.cs",
+              "ToolTip": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Domain\\DataSeeders\\UsersDataSeeder.cs",
+              "RelativeToolTip": "Src\\UsersService.Domain\\DataSeeders\\UsersDataSeeder.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwBEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:18:30.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Infra\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "Src\\UsersService.Infra\\Services\\TokenService.cs",
               "ToolTip": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Infra\\Services\\TokenService.cs",
               "RelativeToolTip": "Src\\UsersService.Infra\\Services\\TokenService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAkwC0AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAwwCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T12:22:42.583Z",
+              "WhenOpened": "2025-01-06T12:17:14.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Infra\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Src\\UsersService.Infra\\Services\\UserService.cs",
+              "ToolTip": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Infra\\Services\\UserService.cs",
+              "RelativeToolTip": "Src\\UsersService.Infra\\Services\\UserService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAADwvysAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:05:17.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Username.cs",
+              "DocumentMoniker": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Domain\\ValueObjects\\Username.cs",
+              "RelativeDocumentMoniker": "Src\\UsersService.Domain\\ValueObjects\\Username.cs",
+              "ToolTip": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Domain\\ValueObjects\\Username.cs",
+              "RelativeToolTip": "Src\\UsersService.Domain\\ValueObjects\\Username.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIA6wBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:05:17.897Z",
               "EditorCaption": ""
             }
           ]

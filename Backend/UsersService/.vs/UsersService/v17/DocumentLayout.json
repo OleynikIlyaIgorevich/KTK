@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Projects\\KTK\\Backend\\UsersService\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{94F25969-3EFB-4F64-A14A-95F576D9949C}|Src\\UsersService.Application\\UsersService.Application.csproj|c:\\projects\\ktk\\backend\\usersservice\\src\\usersservice.application\\iservices\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94F25969-3EFB-4F64-A14A-95F576D9949C}|Src\\UsersService.Application\\UsersService.Application.csproj|solutionrelative:src\\usersservice.application\\iservices\\itokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4863D895-E0D2-4F92-8DD9-30870168B349}|Src\\UsersService.Api\\UsersService.Api.csproj|c:\\projects\\ktk\\backend\\usersservice\\src\\usersservice.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4863D895-E0D2-4F92-8DD9-30870168B349}|Src\\UsersService.Api\\UsersService.Api.csproj|solutionrelative:src\\usersservice.api\\controllers\\tokencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ITokenService.cs",
+              "DocumentMoniker": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Application\\IServices\\ITokenService.cs",
+              "RelativeDocumentMoniker": "Src\\UsersService.Application\\IServices\\ITokenService.cs",
+              "ToolTip": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Application\\IServices\\ITokenService.cs",
+              "RelativeToolTip": "Src\\UsersService.Application\\IServices\\ITokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAMwAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T13:08:26.982Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TokenController.cs",
+              "DocumentMoniker": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Api\\Controllers\\TokenController.cs",
+              "RelativeDocumentMoniker": "Src\\UsersService.Api\\Controllers\\TokenController.cs",
+              "ToolTip": "C:\\Projects\\KTK\\Backend\\UsersService\\Src\\UsersService.Api\\Controllers\\TokenController.cs",
+              "RelativeToolTip": "Src\\UsersService.Api\\Controllers\\TokenController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T13:08:23.791Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,4 +1,6 @@
-﻿namespace UsersService.Domain.Extensions;
+﻿using Microsoft.EntityFrameworkCore.Diagnostics;
+
+namespace UsersService.Domain.Extensions;
 
 public static class ServiceCollectionExtensions
 {
@@ -11,7 +13,8 @@ public static class ServiceCollectionExtensions
             options
                 .UseNpgsql(configuration.GetConnectionString(
                     nameof(UsersDbContext)))
-                .UseLazyLoadingProxies();
+                .ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning))
+                .EnableSensitiveDataLogging();
         });
     }
 }

@@ -10,21 +10,21 @@ public class UserConfiguration
 
         builder.HasKey(u => u.Id);
 
-        builder.OwnsOne(u => u.FullName, fullname =>
-        {
-            fullname
-                .Property(fn => fn.Last)
-                .IsRequired()
-                .HasColumnName("LastName");
-            fullname
-                .Property(fn => fn.First)
-                .IsRequired()
-                .HasColumnName("FirstName");
-            fullname
-                .Property(fn => fn.Middle)
-                .IsRequired(false)
-                .HasColumnName("MiddleName");
-        });
+        //builder.OwnsOne(u => u.FullName, fn =>
+        //{
+        //    fn
+        //        .Property(fn => fn.Last)
+        //        .IsRequired()
+        //        .HasColumnName("LastName");
+        //    fn
+        //        .Property(fn => fn.First)
+        //        .IsRequired()
+        //        .HasColumnName("FirstName");
+        //    fn
+        //        .Property(fn => fn.Middle)
+        //        .IsRequired(false)
+        //        .HasColumnName("MiddleName");
+        //});
 
         builder
             .Property(u => u.Username)
@@ -58,6 +58,7 @@ public class UserConfiguration
                     .HasOne(ur => ur.User)
                     .WithMany(r => r.UserRoles)
                     .HasForeignKey(ur => ur.UserId));
-        
+
+        builder.SeedData();
     }
 }

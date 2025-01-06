@@ -2,11 +2,11 @@
 
 public record FullName
 {
-    public string Last { get; }
-    public string First { get; }
-    public string Middle { get; }
+    public string Last { get; private set; }
+    public string First { get; private set; }
+    public string Middle { get; private set; }
 
-    private FullName(
+    internal FullName(
         string last,
         string first,
         string middle)
@@ -17,7 +17,7 @@ public record FullName
     }
 
     public static async Task<OperationResult<FullName>> CreateAsync(
-        string last, string first, string middle)
+        string last, string first, string? middle)
     {
         if (string.IsNullOrWhiteSpace(last))
             return await OperationResult<FullName>.FailAsync("Фамилия не может быть пустой!");

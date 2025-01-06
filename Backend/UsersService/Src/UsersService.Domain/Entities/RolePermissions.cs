@@ -9,4 +9,12 @@ public class RolePermissions
     public virtual Permission Permission { get; set; }
 
     internal RolePermissions() { }
+
+    internal RolePermissions(
+        int roleId,
+        int permissionId)
+    {
+        RoleId = roleId;
+        PermissionId = permissionId;
+    }
 }

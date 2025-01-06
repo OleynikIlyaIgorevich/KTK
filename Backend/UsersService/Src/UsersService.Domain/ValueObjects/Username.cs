@@ -17,7 +17,7 @@ public record Username
 
         value = value.Trim();
 
-        if (MIN_LENGHT < value.Length || value.Length > MAX_LENGHT)
+        if (MIN_LENGHT > value.Length || value.Length > MAX_LENGHT)
             return await OperationResult<Username>.FailAsync($"Имя пользовотеля не может быть меньше {MIN_LENGHT} и не больше {MAX_LENGHT} символов!");
 
         return await OperationResult<Username>.SuccessAsync(new Username(value));

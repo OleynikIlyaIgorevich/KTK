@@ -4,6 +4,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace UsersService.Domain.Migrations
 {
     /// <inheritdoc />
@@ -54,9 +56,6 @@ namespace UsersService.Domain.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    LastName = table.Column<string>(type: "text", nullable: false),
-                    FirstName = table.Column<string>(type: "text", nullable: false),
-                    MiddleName = table.Column<string>(type: "text", nullable: true),
                     Username = table.Column<string>(type: "character varying(32)", maxLength: 32, nullable: false),
                     PasswordHash = table.Column<string>(type: "text", nullable: false),
                     IsActive = table.Column<bool>(type: "boolean", nullable: false),
@@ -141,6 +140,61 @@ namespace UsersService.Domain.Migrations
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.InsertData(
+                table: "Permissions",
+                columns: new[] { "Id", "CreatedAt", "DeletedAt", "Description", "IsDeleted", "Title", "UpdatedAt" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2025, 1, 6, 13, 29, 12, 723, DateTimeKind.Utc).AddTicks(590), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Permission.Users.Get", false, "Permission.Users.Get", null },
+                    { 2, new DateTime(2025, 1, 6, 13, 29, 12, 723, DateTimeKind.Utc).AddTicks(1203), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Permission.Users.Create", false, "Permission.Users.Create", null },
+                    { 3, new DateTime(2025, 1, 6, 13, 29, 12, 723, DateTimeKind.Utc).AddTicks(1205), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Permission.Users.Update", false, "Permission.Users.Update", null },
+                    { 4, new DateTime(2025, 1, 6, 13, 29, 12, 723, DateTimeKind.Utc).AddTicks(1206), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Permission.Users.Delete", false, "Permission.Users.Delete", null },
+                    { 5, new DateTime(2025, 1, 6, 13, 29, 12, 723, DateTimeKind.Utc).AddTicks(1208), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Permission.Users.Export", false, "Permission.Users.Export", null },
+                    { 6, new DateTime(2025, 1, 6, 13, 29, 12, 723, DateTimeKind.Utc).AddTicks(1209), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Permission.Users.Import", false, "Permission.Users.Import", null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Roles",
+                columns: new[] { "Id", "CreatedAt", "DeletedAt", "Description", "IsDeleted", "Title", "UpdatedAt" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2025, 1, 6, 13, 29, 12, 727, DateTimeKind.Utc).AddTicks(2408), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Супер пользователь", false, "Супер пользователь", null },
+                    { 2, new DateTime(2025, 1, 6, 13, 29, 12, 727, DateTimeKind.Utc).AddTicks(3120), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Оператор расписания", false, "Оператор расписания", null },
+                    { 3, new DateTime(2025, 1, 6, 13, 29, 12, 727, DateTimeKind.Utc).AddTicks(3122), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Преподаватель", false, "Преподаватель", null },
+                    { 4, new DateTime(2025, 1, 6, 13, 29, 12, 727, DateTimeKind.Utc).AddTicks(3123), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "Студент", false, "Студент", null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "CreatedAt", "DeletedAt", "IsActive", "IsDeleted", "PasswordHash", "UpdatedAt", "Username" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2025, 1, 6, 13, 29, 13, 90, DateTimeKind.Utc).AddTicks(6095), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), true, false, "$2a$11$/Ob.ZAZKdX8.qawI0tLWNe5SNkPpNex8NiRlauRs29m6LLT2XlI6O", null, "ilya1203" },
+                    { 2, new DateTime(2025, 1, 6, 13, 29, 13, 240, DateTimeKind.Utc).AddTicks(7535), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), true, false, "$2a$11$vMa.nWe34.S0W5fGIbEdfefqG0BtZ8vchv.4mRCU2AZ9L3oT1.ZJm", null, "gabitov123" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "RolePermissions",
+                columns: new[] { "PermissionId", "RoleId" },
+                values: new object[,]
+                {
+                    { 1, 1 },
+                    { 2, 1 },
+                    { 3, 1 },
+                    { 4, 1 },
+                    { 5, 1 },
+                    { 6, 1 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "UserRoles",
+                columns: new[] { "RoleId", "UserId" },
+                values: new object[,]
+                {
+                    { 1, 1 },
+                    { 3, 2 }
                 });
 
             migrationBuilder.CreateIndex(
